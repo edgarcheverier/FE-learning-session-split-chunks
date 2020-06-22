@@ -14,18 +14,8 @@ Depending on the chunks option selected, the optimization is going to be apply t
 
 ## How does it work?
 
-## Setup for our basic app.
-- Create a new directory for our basic app e.g cd Documents => mkdir fe-learning-session cd fe-learning-session
-- Now in the terminal run the following command `npm init` and install the following dependencies
-- `npm install --save-dev webpack`
-- `npm install --save-dev webpack-cli`
-- `npm install jquery`
-- Add a script in the `package.json` file to run `webpack` with `npm run build`
-- In the root create a directory called `dist` and a file called `webpack.config.js`
-- Also in the root create two files called `A.js` and `B.js`
-- Inside the `dist` directory create two html files called `A.html` and `B.html`
-
-## Lets first try it without the split chunks
-- Add a basic configuration the the file `webpack.config.js`
-- Add some js using jquery to the files `A.js` and `B.js`
-- Finally import the webpack bundles in the html files
+We will create two basic web pages, so we will have two entry points, and then we will try webpack with and without the `SplitChunksPlugin` plugin.
+If you want to follow this part by doing:
+- Create a new directory for our basic app e.g cd Documents => `mkdir fe-learning-session` `cd fe-learning-session`
+- Clone the testing app `git clone git@github.com:edgarcheverier/FE-learning-session-split-chunks.git`
+- run `npm install` this will install the following dependency `jquery` and dev dependencies `webpack` and `webpack-cli`
